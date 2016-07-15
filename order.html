@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+   <title>Rollmaal - Fast Food Restaurant, Order Food Online in Delhi NCR</title>
+	<meta name="description" content="Order food online at Rollmaal fast food restaurant. Rollmaal is to create a contemporary eating space for the masses and to provide fresh, wholesome meals at incredible value for money.
+">
+	<meta property="og:title" content="Rollmaal - Fast Food Restaurant, Order Food Online in Delhi NCR
+" />
+	<meta property="og:description" content="Order food online at Rollmaal fast food restaurant. Rollmaal is to create a contemporary eating space for the masses and to provide fresh, wholesome meals at incredible value for money.
+" />
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+	<link href="css/main.css?v=1.0" rel="stylesheet" />
+	</head>
+<body>
+	<div class="header">
+		<div class="viewport">
+			<div class="header-container relative-pos">
+				<a href="index.html"><div class="site-logo abs-pos"></div></a>
+				<div class="nav-container abs-pos"> 
+					<div class="login-button login">login</div>
+					<div class="profile-view-cont responsive">
+						<div class="route-to-order-history">Order History</div>
+						<div class="route-to-wallet">Wallet</div>
+						<div class="logout">Logout</div>
+					</div>
+					<!--<div class="social-pages">
+						<div id="facebook"></div>
+						<div id="instagram"></div>
+					</div>-->
+				</div>
+				<div class="ham-menu hide abs-pos">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+				</div>
+				<div class="select-loc">
+					<div class="relative-pos">
+						<div class="loc-disabler hide"></div>
+						<i class="fa fa-crosshairs valign-absolute-abs"></i>
+						<input type="text" placeholder="Search Location" id="google_location" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container relative-pos">		
+		<div class="page hide" id="index">
+			<div class="header-2">
+				<div  class="viewport">
+					<!--<div id="cart_icon" class="float-right"><i class="fa fa-shopping-cart"></i><span class="counter">0</span></div>-->
+					<div id="category_menu"class="float-left"></div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="viewport photo-slider m-t-20" id="index_slider">
+				<div>
+					<img src="img/48east/banner1.png" alt="" />
+				</div>
+				<div>
+					<img src="img/48east/banner2.png" alt="" />
+				</div>
+				<div>
+					<img src="img/48east/banner3.png" alt="" />
+				</div>
+			</div>
+			<div class="page-container viewport m-t-10"></div>
+			<div class="footer-cart">
+				<div id="footer_cart_icon" class="float-right">
+					<i class="fa fa-shopping-cart"></i>
+					<span class="counter">0</span>
+				</div>
+			</div>
+		</div>
+		<div class="page hide" id="cart">
+			<div class="page-container viewport default-order-flow-layout">
+				<div class="cart-container order-flow-section">
+					<div class="default-inline-container order-flow-header">
+						<div><i aria-hidden="true" class="fa fa-shopping-basket fa-3x"></i>&nbsp;</div>
+						<div>Your Order</div>
+					</div>
+					<div class="cart-item-container div-table"></div>
+					<div class="cart-nav padding-10">
+						<div></div>
+						<div>
+						<a class="m-l-10 button default float-right large route-to-checkout enabled">Checkout</a></div>
+						<a class="button secondary float-right large" href="order.html#/">Add More Items</a>						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page hide" id="checkout">
+			<div class="page-container viewport default-order-flow-layout">
+				<div class="checkout-container order-flow-section">
+					<div class="default-inline-container order-flow-header">
+						<div><i aria-hidden="true" class="fa fa-shopping-cart fa-3x"></i>&nbsp;</div>
+						<div>Checkout</div>
+					</div>
+					<div class="checkout-content order-flow-content">
+						<div class="delivery-info">
+							<div class="sub-header uppercase padding-10">Delivery Info</div>
+							
+							<div class="selected-user-address padding-10">
+								<div class="display-selected-address relative-pos">
+									
+								</div>
+								<div class="display-all-address-cont uppercase">
+									<div class="display-all-address blink small-text">Loading..</div>
+									<div class="add-new-address">Add New</div>
+								</div>
+							</div>							
+							<div class="padding-10 order-flow-form small">
+								<div class="order-flow-form-input">
+								<div class="uppercase small-text bold input-label">Contact No:</div>
+								<input class="customer-phone" data-required="true" data-name="phone" type="text" placeholder="Contact No" /></div>								
+								<div class="order-flow-form-input bold">
+									<div class="uppercase small-text input-label">Comments:</div>
+								<textarea class="customer-comment'"></textarea>								
+								</div>
+							</div>
+						</div><!--
+						--><div class="order-info">
+							<div class="sub-header  uppercase padding-10">Order Info</div>
+							<div class="order-section">
+								<div class="billing">
+									<div class="subtotal-cont">Sub Total: <span class="subtotal"></span></div>
+									<div class="tax-cont">Tax: <span class="tax"></span></div>
+									<div class="packaging-cont">Packaging: <span class="packaging"></span></div>
+									<div class="delivery-cont"></div>									
+									<div class="m-t-10  discount-cont bold small-text green-text">Discount: <span class="discount"><i class="fa fa-spinner fa-spin"></i></span></div>
+									<div class="m-t-10  total-cont">Total: <span class="total"></span></div>									
+								</div>
+								<div>
+									<div class="coupon-section m-t-20">
+										<div class="coupon-container">
+											<input type="text" placeholder="Enter Coupon" class="float-left" />
+											<a class="apply-coupon float-right enabled">Apply</a> 
+											<div class="clearfix"></div> 
+										</div>
+										<div class="messaging m-t-10"></div>
+									</div>
+									<div class="delivery-time m-t-10">
+										<div class="uppercase small-text bold input-label">Delivery Time:</div>
+										<div class="relative-pos timepicker-cont">
+											<!--<div class="timepicker-icon valign-absolute-abs"><i class="fa fa-clock-o"></i></div>-->
+											<input type="readonly" class="timepicker" /> 
+										</div>
+									</div>
+									<div class="payment-gateway m-t-10">
+										<div class="uppercase small-text bold input-label">Payment Options:</div>
+										<select>
+											
+										</select>
+									</div>
+									<div class="m-t-10 wallet-reload-link hide">
+										<div class="uppercase small-text bold route-to-wallet">Reload Wallet</div>										
+									</div>
+									<div id="place_order_button" class="m-t-20">
+										<a class="button default large enabled">Confirm Order</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="page hide" id="orders">
+			<div class="page-container viewport default-order-flow-layout">
+				<div class="order-flow-section">
+					<div class="default-inline-container order-flow-header">
+						<div><i aria-hidden="true" class="fa fa-clock-o fa-3x"></i>&nbsp;</div>
+						<div>Order History</div>
+					</div>
+					<div class="order-history-container">
+						<div class="text-center bold blink padding-10"> Loading..</div>
+					</div>
+					<div class="text-center m-t-10">
+						<a href="order.html#/" class="button large default">Browse Menu</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="page hide" id="wallet">
+			<div class="page-container viewport default-order-flow-layout">
+				<div class="order-flow-section">
+					<div class="default-inline-container order-flow-header">
+						<div><i aria-hidden="true" class="fa fa-credit-card fa-3x"></i>&nbsp;</div>
+						<div>Wallet&nbsp;<span id="current_balance"></span></div>						
+					</div>
+					<div class="wallet-container padding-10 text-center">
+						<div class="uppercase bold small-text">Reload Wallet</div>
+						<div class="reload-amount m-t-10">
+							<div class="reload-trigger selected" data-amount="100">100</div>
+							<div class="reload-trigger"  data-amount="200">200</div>
+							<div class="reload-trigger"  data-amount="500">500</div>
+						</div>
+					</div>
+					<div class="text-center m-t-20">
+						<a class="global-back enabled button secondary large default">Back</a>
+						<a class="button large default reload-button">Reload</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="page hide" id="thankyou">
+			<div class="page-container viewport default-order-flow-layout">
+				<div class="padding-10 order-flow-section relative-pos">
+					<div class="center-absolute">
+						<div class="text-center thank-you-text">Order has been successfully placed!</div>
+						<div class="text-center order-id green-text small-text bold"></div>
+						<div class="text-center m-t-10">
+							<a href="order.html#/" class="button large default">Browse Menu</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center up-branding">
+			<a target="_blank" href="http://www.urbanpiper.com"><img src="img/urbanpiper.png" /></a>
+		</div>
+	</div>
+	
+	
+	<div class="overlay hide" id="login_overlay">
+		<div class="modal" id="login">
+			<div class="close float-right" id="close_login_modal"><i class="fa fa-close"></i></div>
+			<div class="login-modal">
+				<div id="signin" class="modal-sections">
+					<div class="modal-header">Signin</div>
+					<div class="inputs m-t-10">
+						<div class="input-field"><span class="bold">+91</span><input type="text" maxlength="10" minlength="10"  class="phone" placeholder="Phone No"></div>
+						<div class="input-field "><input type="password" class="password"  placeholder="Password"></div>
+						<div class="messaging float-left"></div>
+						<div><a class="button default enabled float-right" >Signin</a></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="modal-footer m-t-10">
+						<div data-modal-target="signup" class="modal-nav float-right bold m-l-10 cursor-pointer">Signup</div>
+						<div data-modal-target="forgot" class="modal-nav float-right bold cursor-pointer">Forgot Password</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div id="forgot" class="hide modal-sections">
+					<div class="modal-header">Reset</div>
+					<div class="inputs m-t-10">
+						<div class="input-field"><span class="bold">+91</span><input type="text" maxlength="10" minlength="10"  class="phone" placeholder="Phone No"></div>
+						<div class="hide reset-section">
+							<div class="otp-container">
+								<div><div class="otp-wait default"></div></div>
+								<div class="resend-token enabled">Resend Token</div>
+							</div>
+							<div class="clearfix"></div>
+							<div class="input-field "><input type="text" class="token"  placeholder="Token"></div>
+							<div class="input-field "><input type="password" class="pass1"  placeholder="Password"></div>
+							<div class="input-field "><input type="password" class="pass2"  placeholder="Retype Password"></div>
+						</div>
+						<div class="messaging float-left"></div>
+						<div>
+							<a class="button default enabled float-right otp  m-l-10" >Reset Password</a>
+							<!--<a class="button secondary  float-right modal-nav bold" data-modal-target="signin">Cancel</a>-->
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="modal-footer m-t-10">
+						<div data-modal-target="signin" class="modal-nav float-right bold  m-l-10 cursor-pointer">Signin</div>
+						<div data-modal-target="signup" class="modal-nav float-right bold cursor-pointer">Signup</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div id="signup" class="hide modal-sections">
+					<div class="modal-header">Signup</div>
+					<div class="inputs m-t-10">
+						<div class="input-field"><span class="bold">+91</span><input type="text" maxlength="10" minlength="10"  class="phone" placeholder="Phone No"></div>
+						<div class="signup-section">
+							<div class="input-field"><input type="text" class="name"  placeholder="Name"></div>
+							<div class="input-field"><input type="text" class="email"  placeholder="Email"></div>
+							<div class="input-field"><input type="password" class="pass"  placeholder="Password"></div>
+						</div>
+						<div class="hide verify-section">
+							<div class="input-field"><input type="text" class="token"  placeholder="Enter OTP"></div>
+							<div class="otp-container">
+								<div><div class="otp-wait default"></div></div>
+								<div class="resend-token enabled">Resend OTP</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div class="messaging float-left"></div>
+						<div>
+							<a class="button default enabled float-right otp  m-l-10" >Signup</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="modal-footer m-t-10">
+						<div data-modal-target="signin" class="modal-nav float-right bold m-l-10 cursor-pointer">Signin</div>
+						<div data-modal-target="forgot" class="modal-nav float-right bold cursor-pointer">Forgot Password</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay hide" id="add_new_address" data-edit="false">
+		<div class="modal padding-10 add-address  order-flow-form">
+			<div class="close float-right" id="close_address_modal"><i class="fa fa-close"></i></div>
+			<div class="order-flow-form-header bold">Add a new address</div>
+			<div class="order-flow-form-input"><input id="tag" data-required="true" data-name="tag" type="text" placeholder="tag your address e.g. Home, Office" /></div>
+			<div class="order-flow-form-input"><input id="google_locality" data-required="true" data-name="sub_locality" type="text" placeholder="Locality" /></div>
+			<div class="order-flow-form-input"><input id="address_1" data-required="true" type="text" data-name="address_1" placeholder="Address Line-1" /></div>
+			<div class="order-flow-form-input"><input id="address_2" data-required="false" type="text" data-name="address_2" placeholder="Address Line-2" /></div>
+			<div class="order-flow-form-input"><input id="city" data-required="true"  type="text" data-name="city" id="google_city" placeholder="City" /></div>
+			<div class="order-flow-form-input"><input id="google_pincode" data-required="true" type="text" data-name="pin" placeholder="Pincode" /></div>
+			<div class="order-flow-form-button">
+				<div class="messaging"></div>
+				<a class="button default large enabled">Save</a><div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay hide" id="complex_item">
+		<div class="modal">			
+			<div class="close float-right" id="close_complex_item_popup"><i class="fa fa-close"></i></div>
+			<div class="popup-content"></div>
+			<div class="popup-confirm padding-10">
+				<div class=" float-left messaging"></div>
+				<a class=" float-right button default add-complex-item">Done</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay hide unlocked" id="location_prompt">
+		<div class="modal padding-10">
+			<!--<div class="close float-right" id="close_custom_popup"><i class="fa fa-close"></i></div>-->
+			<div class="popup-content">
+				<div><i class="fa fa-crosshairs"></i>&nbsp;Please type your location:</div>
+				<div class="m-t-10"><input type="text" id="google_location_2" placeholder="Search Location" /></div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay hide unlocked" id="custom_popup">
+		<div class="modal padding-10">
+			<div class="close float-right" id="close_custom_popup"><i class="fa fa-close"></i></div>
+			<div class="popup-content"></div>
+		</div>
+	</div>	
+	<div class="spinner">
+		<div class="spinner_cont">
+			<div class="spinner__item1"></div>
+			<div class="spinner__item2"></div>
+			<div class="spinner__item3"></div>
+			<div class="spinner__item4"></div>
+		</div>
+	</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?&libraries=places&key=AIzaSyCO6x3RQb2KTIsDL3Y_Od4LzV82BrbBHQ4" type="text/javascript"></script>-->
+<script src="https://maps.googleapis.com/maps/api/js?&libraries=places" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js?v=1.3"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>

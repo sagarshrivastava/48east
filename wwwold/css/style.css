@@ -1,0 +1,93 @@
+@font-face {
+
+    font-family: 'aniversregular';
+
+    src: url('../fonts/anivers_31-webfont.eot');
+
+    src: url('../fonts/anivers_31-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('../fonts/anivers_31-webfont.woff2') format('woff2'),
+
+         url('../fonts/anivers_31-webfont.woff') format('woff'),
+
+         url('../fonts/anivers_31-webfont.ttf') format('truetype'),
+
+         url('../fonts/anivers_31-webfont.svg#aniversregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+
+
+#page-wrapper { float: left; width: 100%; }
+
+body{background-color:#000;}
+
+.wrapper { margin: 0 auto; max-width: 1150px; height:800px; position: relative; background-image:url(../image/BG.png) !important;  }
+
+.wrapperabout { margin: 0 auto; max-width: 1150px; height:800px; position: relative; background-image:url(../image/about-us-bg.png) !important;  }
+
+.wrappercontact { margin: 0 auto; max-width: 1150px; height:800px; position: relative; background-image:url(../image/contact-us.png) !important;  }
+
+.wrapperlocation { margin: 0 auto; max-width: 1150px; height:1096px; position: relative; background-image:url(../image/location-bg.png) !important;  }
+
+.wrapperMenu { margin: 0 auto; max-width: 1150px; height:2880px; position: relative; background-image:url(../image/menu-detail.jpg) !important;  }
+
+/**************header part css ****************/
+
+#header { float: left; width: 100%; clear: both;  }
+
+#header .Logo { float: left; width: 60%; padding: 100px 0px 0px 0px; }
+
+#header .contactbutton { float: left; width: 40%; padding:120px 0px 0px 0px; }
+
+#header .contactbutton .media{ float: left; width:68px; height:68px; padding-left:20px;}
+
+#header .menu { float: left; width: 100%; padding:60px 0px 0px 0px; }
+
+
+
+#header .menu .buttom{float:left; width:125px; height:56px; padding:0px 30px 0px 0px; }
+
+
+
+/**************header part css end ****************/
+
+
+
+
+
+
+
+#container { float: left; width: 100%; clear: both; }
+
+#container .bodytextinner{padding:60px 0px 0px 0px; }
+
+#container .locationinner{padding:100px 0px 0px 0px; }
+
+#container .bodytext2{padding:90px 0px 0px 0px; }
+
+#container .Button3set{padding:30px 0px 0px 0px; }
+
+#container .Button3set .button1{float:left; width:245px; height:67px;}
+
+#container .Button3set .button2{float:left; width:240px; height:67px;}
+
+#container .Button3set .button3{float:left; width:243px; height:67px;}
+
+
+
+/***************container part css******************/
+
+
+
+#container .about-us{ float:left; width:100%; padding:60px 0px 0px 0px; }
+
+#container .about-us .textabout{ font-family:Tahoma, Geneva, sans-serif; font-size:17px; font-weight:900; color:#FFF; text-align:justify;}
+
+Gotham

@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* -- override default bootstrap styles -- */
+
+body {
+	background-color:		#000;
+	background-image:		url(../img/background.jpg);
+	background-position:	center top;
+	font-family:			"MyriadPro-Regular";
+	font-size:				18px;
+}
+
+.carousel-caption {
+  	bottom: 				40%;
+  	font-family:			"MyriadPro-Bold";
+	font-size:				40px;
+  	text-shadow: 			0 3px 3px rgba(0, 0, 0, 0.9);
+	text-transform:			uppercase;
+}
+
+.dropdown-menu {
+	border: 				1px solid #41c7f5;
+}
+
+.navbar {
+	border: 				none;
+	font-family:			"HarryThin";
+	font-weight: 			bold;
+	position: 				relative;
+}
+
+.navbar-default {
+	background-color: 		transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color:					#41c7f5;
+	font-size:				18px;
+	margin:					25px 0 0 15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color:					#fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: 					#fff;
+	background-color: 		#41c7f5;
+}
+
+.navbar-collapse {
+	border-top:					0px solid transparent;
+	overflow-x:					visible;
+	padding-right:				15px;
+	padding-left:				15px;
+	
+	-webkit-overflow-scrolling:	touch;
+
+	-webkit-box-shadow:			inset 0 0px 0 rgba(255,255,255,.1);
+			box-shadow:			inset 0 0px 0 rgba(255,255,255,.1);
+}
+
+
+
+/* --  custom styles -- */
+
+
+
+.backtotop {
+	border-top:				#41c7f5 2px solid;
+	margin: 				60px 0;
+}
+
+.backtotop a {
+	background-color:		#000;
+	border:					#41c7f5 2px solid;
+	color:					#41c7f5;
+	content: 				url(../img/arrow.png);
+	height:					60px;
+	margin:					-30px auto 0 auto;
+	padding:				5px;
+	position:				relative;
+	width:					60px;
+	
+	-webkit-border-radius: 	30px; /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+	   -moz-border-radius: 	30px; /* Firefox 1-3.6 */
+		    border-radius: 	30px;	
+}
+
+.button {
+	background-color:		#333;
+	color:					#fff;
+	padding:				5px 10px;
+}
+
+.button:hover {
+	background-color:		#41c7f5;
+	color:					#fff;
+	text-decoration:		none;
+}
+
+.brand-tn img {
+	position:				relative;
+	z-index:				0;
+}
+
+.brand-tn.mamagoto span {
+	/*background-image:		url(../img/mamagoto-logo.png);
+	background-position:	center center;
+	background-repeat:		no-repeat;*/
+	height:					100%;
+	position:				absolute;
+	text-align:				center;
+	vertical-align:			middle;
+	width:					100%;
+	z-index:				1;
+}
+
+.brand-tn.mamapaati span {
+	/*background-image:		url(../img/mamapaati-logo.png);
+	background-position:	center center;
+	background-repeat:		no-repeat;*/
+	height:					100%;
+	position:				absolute;
+	text-align:				center;
+	vertical-align:			middle;
+	width:					100%;
+	z-index:				1;
+}
+
+.brand-tn.rollmaal span {
+	/*background-image:		url(../img/rollmaal-logo.png);
+	background-position:	center center;
+	background-repeat:		no-repeat;*/
+	height:					100%;
+	position:				absolute;
+	text-align:				center;
+	vertical-align:			middle;
+	width:					100%;
+	z-index:				1;
+}
+
+.brand-tn.speedychow span {
+	/*background-image:		url(../img/speedychow-logo.jpg);
+	background-position:	center center;
+	background-repeat:		no-repeat;*/
+	height:					100%;
+	position:				absolute;
+	text-align:				center;
+	vertical-align:			middle;
+	width:					100%;
+	z-index:				1;
+}
+
+.content h1 {
+	border-bottom:			#41c7f5 2px solid;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: 				block;
+    margin-top: 			0; 
+}
+
+footer, footer a {
+	font-size:				14px;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:					#41c7f5;	
+	font-family:			"HarryThin";
+	font-weight:			bolder;
+	padding-bottom:			15px;
+}
+
+#home-about {
+	border-bottom:			#41c7f5 2px solid;
+	border-top:				#41c7f5 2px solid;
+}
+
+#home-about p {
+	margin:					15px 0;
+}
+
+#home-about p span {
+	color:					#41c7f5;
+	font-size:				36px;
+}
+
+#home-contact p{
+	font-size:				18px;
+}
+
+#home-brands {
+	background-color: 		#dfe6e4;
+}
+
+#home-slider {
+	background-color: 		#dfe6e4;
+}
+
+.list ul li {
+	color:					#fff;	
+}
+
+#map {
+	height:					480px;	
+}
+
+.modal {
+  	height:					75%;
+	margin:					auto 5%;
+	position:				absolute;
+  	top:					75% !important;
+  	width:					90%;
+	
+	-webkit-transform: 		translate(0, -50%) !important;
+	  	-ms-transform: 		translate(0, -50%) !important;
+	  		transform: 		translate(0, -50%) !important;
+}
+
+.modal-content {
+  	min-height:				100%;
+  	position:				absolute;
+  	
+	top:					0;
+  	bottom:					0;
+  	left:					0;
+  	right:					0; 
+}
+
+.modal-footer {
+  	position:				absolute;
+  	
+	bottom:					0;
+  	left:					0;
+  	right:					0;
+}
+
+#modal-azure-dharma {
+	margin:					auto;
+	width:					50%;
+}
+
+#modal-azure-dharma .modal-body iframe {
+	border:					none;
+	display: 				block;
+	height: 				calc(100vh - 360px);
+	width:					100%;
+}
+
+.nav2 a{
+	color:					#fff;
+	margin:					0 5px;
+}
+
+p {
+	color: 					#fff;	
+}
+
+.panel-brand {
+	background-color:		#dfe6e4;
+	border-left:			#000 5px solid;
+	border-right:			#000 5px solid;
+}
+
+.panel-brand div {
+	background-color:		#fff;
+	border:					#41c7f5 2px solid;
+	height:					240px;
+	margin:					30px auto 0 auto;
+	padding:				15px;
+	position:				relative;
+	width:					240px;
+	
+	-webkit-border-radius: 	120px; /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+	   -moz-border-radius: 	120px; /* Firefox 1-3.6 */
+		    border-radius: 	120px;		
+}
+
+.panel-brand div.mamagoto {
+	background-image:		url(../img/mamagoto-logo.png);
+	background-position:	center;
+	background-repeat:		no-repeat;
+}
+
+.panel-brand div.mamapaati {
+	background-image:		url(../img/mamapaati-logo.png);
+	background-position:	center;
+	background-repeat:		no-repeat;
+}
+
+.panel-brand div.rollmaal {
+	background-image:		url(../img/rollmaal-logo.png);
+	background-position:	center;
+	background-repeat:		no-repeat;
+}
+
+.panel-brand div.speedychow {
+	background-image:		url(../img/speedychow-logo.jpg);
+	background-position:	center;
+	background-repeat:		no-repeat;
+}
+
+.panel-brand p {
+	margin: 				30px auto;	
+}
+
+.panel-brand p a{
+	border-bottom:			#41c7f5 1px solid;
+	color:					#333;
+	font-size:				18px;
+}
+
+.panel-brand p a:hover{
+	text-decoration:		none;
+}

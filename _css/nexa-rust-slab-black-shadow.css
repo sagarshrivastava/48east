@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'Nexa-Rust-Slab-Black-Shadow01';
+  src: 			url('../fonts/nexa-rust-slab-black-shadow-01.eot?#iefix') format('embedded-opentype'),  
+  				url('../fonts/nexa-rust-slab-black-shadow-01.otf')  format('opentype'),
+	     		url('../fonts/nexa-rust-slab-black-shadow-01.woff') format('woff'), 
+				url('../fonts/nexa-rust-slab-black-shadow-01.ttf')  format('truetype'), 
+				url('../fonts/nexa-rust-slab-black-shadow-01.svg#NexaRustSlab-BlackShadow01') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

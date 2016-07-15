@@ -1,0 +1,77 @@
+.box
+{width:400px;
+display: none;}
+.bnner{
+width:400px;
+float:left;
+background:#ee1d25;
+}
+.bnner .top{
+background-image:url(../images/bg_img1.jpg);
+width:390px ;
+height:322px;
+position:relative;
+margin:5px;
+}
+.bnner .top a img{
+display:block;
+float:right;
+}
+.bnner .top h5{
+color:#fff;
+font-size:14px;
+margin:0 auto;
+padding:0;
+position:absolute;
+text-align:center;
+width:100%;
+bottom:10px;
+text-transform:uppercase;
+font-family:Arial, Helvetica, sans-serif;
+}
+.bnner .bottm{
+background:#ffc224;
+padding:10px;
+}
+.bnner .bottm a{
+text-decoration:none;
+}
+.bnner .bottm h3{
+text-transform:uppercase;
+background:#231f20;
+width:130px;
+text-align:center;
+color:#ffc224;
+margin:0 auto;
+padding:12px 30px;
+border-radius:5px;
+}
+
+@media (max-width: 440px) {
+.box{
+width:100%;
+}
+.bnner{
+width:100%;
+float:left;
+}
+.bnner .top{
+background-image:url(../images/bg_img_mb.jpg);
+width:100%;
+height:162px;
+margin:0 auto;
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-position:center center;
+}
+.bnner .top a img{
+width:70%;
+}
+.bnner .top h5{
+font-size:11px;
+}
+.bnner .bottm h3{
+font-size:14px;
+padding:5px;
+}
+}

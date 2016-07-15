@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* -- override default bootstrap styles -- */
+
+body {
+	background-attachment:		fixed;
+	background-image:			url(../img/background.jpg);
+	background-position:		center top;
+	font-family:				Helvetica, Arial, sans-serif;
+	font-size:					18px;
+}
+
+.carousel-caption {
+  	bottom: 					40%;
+	font-size:					40px;
+  	text-shadow: 				0 3px 3px rgba(0, 0, 0, 0.9);
+	text-transform:				uppercase;
+}
+
+.carousel-indicators li {
+	background-color: 			#eb6607;
+  	border: 					2px solid #fded02;
+	border-radius:				15px;
+  	height: 					15px;
+	width: 						15px;
+}
+.carousel-indicators .active {
+  	background-color: 			#e61e2b;
+	height: 					16px;
+	width: 						16px;
+}
+
+.dropdown-menu {
+	border: 					1px solid #41c7f5;
+}
+
+.navbar {
+	border: 					none;
+	margin:						0;
+	position: 					relative;
+	text-transform:				uppercase;
+}
+
+.navbar-brand {
+  	padding: 					0;
+  	line-height: 				0px;
+  	height: 					60px;
+}
+
+.navbar-default {
+	background-color: 			transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color:						#ffce43;
+	font-family:				'Aspira-Heavy';
+	font-size:					18px;
+	line-height:				30px;
+	margin:						0;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color:						#fff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: 						#fff;
+	background-color: 			#e61e2b;
+}
+
+.navbar-collapse{
+	border-top:					0px solid transparent;
+	overflow-x:					visible;
+	padding-right:				15px;
+	padding-left:				15px;
+	
+	-webkit-overflow-scrolling:	touch;
+
+	-webkit-box-shadow:			inset 0 0px 0 rgba(255,255,255,.1);
+			box-shadow:			inset 0 0px 0 rgba(255,255,255,.1);
+}
+
+.nav-tabs {
+	border-bottom: 				none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	background-color: 			transparent;
+	border: 					none;
+	color: 						#fff;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+	background-color: 			transparent;
+	border: 					none;
+	color: 						#f9bf12;
+}
+
+.nav-tabs > li > a:hover {
+	text-decoration:			underline;
+}
+
+/* --  custom styles -- */
+
+#about {
+	background-color:			rgba(15, 72, 99, .9);	
+}
+
+#about .circle {
+	background-image:			url(../img/chai-pakoda-chaat.jpg);
+	background-position:		center;
+	border:						#6fcbf4 4px solid;
+	border-radius:				240px;
+	height:						480px;
+	margin:						0 auto 0 -15px;
+	text-align:					center;
+	width:						480px;		
+}
+
+#about .circle:after {
+	content:					url(../img/moustache-360px.png);
+	height:						60px;
+	margin:						420px 0 0 -180px;
+	position:					absolute;
+	width:						360px;
+}
+
+@media (max-width: 768px) {
+	#about .circle {
+		border-radius:				240px;
+		height:						480px;
+		margin:						auto;
+		width:						480px;		
+	}
+}
+
+@media (max-width: 529px) {
+	#about .circle {
+		border-radius:				180px;
+		height:						360px;
+		margin:						auto;
+		width:						360px;		
+	}
+	
+	#about .circle:after {
+		margin:						300px 0 0 -180px;
+	}
+
+}
+
+@media (max-width: 399px) {
+	#about .circle {
+		border-radius:				135px;
+		height:						270px;
+		margin:						auto;
+		width:						270px;		
+	}
+	
+	#about .circle:after {
+		content:					url(../img/moustache-270px.png);
+		margin:						240px 0 0 -180px;
+	}
+
+}
+
+#about p {
+	margin:						0 auto 30px auto;
+	color:						#f9bf12;
+	line-height:				24px;
+	width:						80%;
+}
+
+#about .teapot {
+	margin: 0 0 0 75px;
+}
+
+@media (max-width: 768px) {
+	#about .teapot {
+		margin: 0 ;
+	}
+}
+
+#call {
+	
+}
+
+#call-order {
+	background-color:			rgba(230, 30, 43, .9);
+	color:						#fff !important;
+	font-family:				"Nexa-Rust-Slab-Black-Shadow01" !important;
+	font-size:					24px;
+	height: 					60px;
+	line-height:				60px;
+}
+
+#contact {
+	background-image:			url(../img/background-wood.jpg);
+}
+
+#contact .red {
+	background-color:			rgba(230, 30, 43, .8);
+	color:						#fff;
+	margin:						0 0 30px 0;
+	padding:					15px;
+}
+
+#contact .red h1{
+	font-family:				"Nexa-Rust-Slab-Black-Shadow01";
+	margin:						0;
+	padding:					0;
+}
+
+#contact .tilt {
+	background-image:			url(../img/red-asterisk.png), url(../img/red-asterisk.png);
+	background-position:		top 0, bottom 0;
+	background-repeat:			repeat-x, repeat-x;
+	
+	margin:						240px auto 0 auto;
+	padding: 					30px 15px 30px 0;
+
+	width:						570px;
+	
+	-webkit-transform: 			rotate(-5deg); /* Chrome, Safari, Opera */
+		-ms-transform: 			rotate(-5deg); /* IE 9 */
+    		transform: 			rotate(-5deg);	
+}
+
+#contact .tilt:after {
+	content:					url(../img/post-bin.png);
+	float:						left;
+	margin:						-480px 0 0 420px;
+	
+	-webkit-transform: 			rotate(5deg); /* Chrome, Safari, Opera */
+		-ms-transform: 			rotate(5deg); /* IE 9 */
+    		transform: 			rotate(5deg);	
+}
+
+footer {
+	background-color:			rgba(15, 72, 99, .8);	
+	color:						#fdce42;
+	font-size:					14px;
+	line-height:				45px;
+}
+
+header {
+	background-color:			rgba(98, 67, 47, .9);
+}
+
+#location {
+	background-image:			url(../img/border-red-left.png), url(../img/border-red-right.png);
+	background-position:		left, right;
+	background-repeat:			repeat-y;
+}
+
+#location .row {
+	background-color:			rgba(216, 168, 8, .8);
+	margin:						0 15px;
+}
+
+.location1 {
+	background-color:			#00489a;	
+}
+
+.location2 {
+	background-color:			#e50052;	
+}
+
+.location3 {
+	background-color:			#d6549a;	
+}
+
+#map {
+	height:						480px;	
+}
+
+#menu {
+	background-image:			url(../img/border-green.png), url(../img/border-green.png);
+	background-position:		left, right;
+	background-repeat:			repeat-y;
+}
+
+#menu .row {
+	margin:						0 30px;
+}
+
+.navbar-right .call {
+	
+}
+
+.navbar-right .order {
+	background-color:			#000;
+}
+
+.navbar-right .social {
+	width:						40px;	
+}
+
+.offers img{
+	width:						90%;
+}
+
+.offer1 img {
+    -webkit-transform: 			rotate(-3deg); /* Chrome, Safari, Opera */
+		-ms-transform: 			rotate(-3deg); /* IE 9 */
+    		transform: 			rotate(-3deg);
+}
+
+.offer2 img {
+    -webkit-transform: 			rotate(2deg); /* Chrome, Safari, Opera */
+		-ms-transform: 			rotate(2deg); /* IE 9 */
+    		transform: 			rotate(2deg);
+}
+
+.offer3 img {
+    -webkit-transform: 			rotate(-5deg); /* Chrome, Safari, Opera */
+		-ms-transform: 			rotate(-5deg); /* IE 9 */
+    		transform: 			rotate(-5deg);
+}
+
+#order-now {
+	background-image:			url(../img/patch-yellow.png);
+	background-position:		center;
+	height:						60px;
+	text-align:					center;
+	width:						214px;
+}
+
+#order-now a {
+	color:						#000;
+}
+
+.tab-content label {
+	cursor:						pointer;
+}
+
+.tab-content input {
+	display:					none;
+}
+
+.tab-pane {
+	background-color:			#d3d800;
+	padding:					20px;
+}
+
+.tab-pane .location:before {
+	content:					url(../img/icon-location.png);
+	position:					absolute;
+	height:						auto;
+	margin:						0 0 0 -40px;
+	width:						20px;
+}
+
+.tab-pane .phone:before {
+	content:					url(../img/icon-phone.png);
+	position:					absolute;
+	height:						auto;
+	margin:						0 0 0 -40px;
+	width:						20px;
+}
+
+.tab-pane .time:before {
+	content:					url(../img/icon-time.png);
+	position:					absolute;
+	height:						auto;
+	margin:						0 0 0 -40px;
+	width:						20px;
+}
+
+.tab-pane .line {
+	border-top:					1px solid #000;	
+}
+
+.tab-pane p {
+	font-size:14px;
+	margin:						0 0 30px 35px;	
+}
+#box {
+	display:					none;
+	position:					absolute; 
+	top:						0; 
+	right:						0; 
+	bottom:						0; 
+	left:						0;
+	z-index:					999;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+#box img {
+	margin:5% auto;
+}

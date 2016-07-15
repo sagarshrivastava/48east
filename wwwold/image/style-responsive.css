@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	background-color: #222020;
+}
+
+#page-wrapper{float:left; width:100%;}
+#wrapper{margin:0 auto; max-width:960px;}
+/*****************header css******************/
+header{width:100%; float:left;}
+header .header{float:left; width:100%;}
+/*****************header css end*******************/
+
+/**************slider part css**********************/
+.slider{float:left; width:100%;}
+
+/**************slider part css end**********************/
+
+
+/**************content area css**********************/
+.content-area{float:left; width:100%;}
+
+
+/**************content area css end**********************/
+
+
+/**************footer area css**********************/
+.footer{float:left; width:100%;}
+
+
+/**************footer area css**********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

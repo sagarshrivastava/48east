@@ -1,0 +1,190 @@
+@media only screen and (max-width: 1400px) {
+.wrapper { width: 96%; padding: 0 2%; }
+#header .main-header .logo-main { width: 11.8%; }
+#header header .main-menu { margin-left: 2%; width: 66%; }
+#header .main-header .logo-main img { display: block; }
+#header header .main-menu #menu li { padding: 0; }
+#header header .main-menu #menu li a { padding: 6px; font-size: 13px; }
+#header .main-header .social-networks { width: 18.5%; }
+#container .inner-container .media-services li { width: 24.5%; }
+#container .our-details h3 { font-size: 18px; }
+#container .offers { padding-bottom: 14px;height: 276px;}
+#container .our-details { padding: 29px 0 41px; }
+.right-side img { display: block; height: auto; max-width: 100%; width: 65%; }
+#container .offers .left-side h3 { font-size: 19px; line-height: 26px; margin-top: 0px; }
+#container .our-details p { font-size: 17px; }
+#container .our-details .founder-sec-right li {font-size: 17px; }
+#container .offers .left-side p { font-size: 16px; line-height: 26px; }
+#container .testimonial h3 { font-size: 19px; padding-bottom: 21px; }
+.inner-pages h3{font-size: 22px;margin-bottom: 16px;}
+.inner-pages .about-company p{font-size:15px;}
+.inner-pages .about{padding-top: 24px;}
+.inner-pages .about-company{padding-bottom: 24px;}
+.inner-pages .about li h4 {font-size: 14px;padding-bottom: 18px;}
+.inner-pages .about li p {font-size: 14px;line-height: 24px;margin-bottom: 15px;}
+.inner-pages .about li ul li, .about-company ul li,.inner-pages .about-company p.require, .about-company h6, .inner-pages ul.faq li h4, .inner-pages ul.faq li p{font-size:14px;}
+.holder { top: 29px; }
+.btn1{right:19px;}
+.career .form-section form ul li input[type="text"], .career .form-section form ul li textarea{width: 69.8%}
+#container .testimonial .clients-speek { width: 50.8%; }
+#itemContainer li { margin: 4.9px 1.3%; width: 133px; }
+#container .testimonial { padding-top: 25px; }
+#footer .f-links.social { width: 27%; }
+#footer .f-links.advertiser, #footer .f-links.publisher, #footer .f-links.social { margin: 0 0 0 4%;}
+}
+
+ @media only screen and (max-width: 1160px) {
+#header header .main-menu { margin-left: 0; width: 100%; }
+#header header .main-menu #menu { padding: 0; border-right: none; }
+#header header .main-menu #menu li:first-child a { margin: 6px 14px 6px 0; }
+#header .main-header .logo-main { width: 150px; }
+#header .main-header .social-networks { width: 53.5%; margin: 0; }
+#container .our-details h4{margin-top:5px;}
+#container .our-details {padding: 29px 0 20px;}
+#container .offers {background: url("../images/fixed-bg.jpg") no-repeat scroll 0 bottom;}
+.career .form-section form ul li input[type="text"], .career .form-section form ul li textarea {border: 1px solid #c8d9e1;font-family:"Roboto-Regular";font-size: 11px;padding: 9px 7%;     resize:none;width: 57.5%;}
+.ads p{padding: 36px 0;font-size: 16px;}
+.ad-content p, .ad-content ul li {font-family: "Roboto-Light";font-size: 15px;line-height: 25px;}
+.ad-content p.last-para {margin: 14px 0;}
+.btn1{right:0; padding: 6px 11px;font-size: 14px;}
+#footer .f-links.advertiser, #footer .f-links.publisher, #footer .f-links.social{ margin: 0%;}
+#footer .f-links.advertiser{width:22%;}
+#footer .f-links.publisher{width:26%;}
+#footer .f-links.social{width:27%;}
+#footer .f-links.social a, #footer .f-links.social .cor-office p{font-size:14px;}
+#footer .links{padding-bottom:0;}
+}
+@media only screen and (max-width: 1023px) {
+#header .contact-media { padding: 9px 0; }
+#header .contact-media .media-contact { display: inline-block; float: none; text-align: center; width: 100%; padding-bottom: 9px; }
+#header .contact-media .search { float: none; text-align: center; width: 100%; }
+#container .offers{}
+.menu li a{margin: 6px 12px 0;}
+.enquiry_form h3, .addressContactUs h3{font-size:18px;text-align: center;}
+.enquiry_form p{font-size:13px;}
+.enquiry_form form{margin-top:0;}
+.addressContactUs ul.corporate_details li .company_address h3, .addressContactUs ul.corporate_details li .phone_detail h3, .addressContactUs ul.corporate_details li.end h3{font-size: 15px;
+    font-weight: 500;margin-bottom: 10px;}
+.phone_detail > a {font-size: 10px;}    
+.addressContactUs ul.corporate_details li .phone_detail p strong{font-weight:normal;font-size: 12px;}
+#container .testimonial .clients { width: 100%; }
+#container .testimonial .clients-speek { width: 100%; }
+#itemContainer li { margin: 4.9px 0.3%; width: 13.3%; }
+#itemContainer li img { height: 92px; }
+.inner-pages .about li h4 span img{width:30px;}
+.inner-pages .about-company p{font-family: "Roboto-Light";}
+.left-part{width:100%; }
+.right-part {display: inline-block;float: none;margin: 20px 0 0;text-align: center;width: 100%;}
+.left-part h5 {font-family: "Roboto-Light";font-size: 17px;}
+.left-part p {font-family: "Roboto-Light";font-size: 15px;}
+.touch{ padding: 14px 3%;margin-bottom: 21px;}
+.ad-content ul {margin-bottom: 16px;}
+.career .form-section form ul li input[type="text"], .career .form-section form ul li textarea{width:48%;}
+#footer{margin:0; padding: 28px 0 0;}
+#footer .f-links li a{font-size:14px;}
+#footer .f-links li a{padding:4px 0 0 19px;}
+#footer .f-links.advertiser {width: 25%;}
+}
+
+@media only screen and (max-width: 767px) {
+body{overflow-x:hidden;}    
+a.self-toggle { display: block; }
+#menu .menu { display: none; }
+.menu li { float: none; padding:2px 0; height:auto;}
+#header header .main-menu #menu li:first-child a { margin: 0;}
+.menu li a { margin:0;  border-bottom: 1px solid #4f5050; color: #4f5050;}
+.menu li:last-child a{border:none;}
+.menu ul{position:relative; top:0; background:none; box-shadow:none; border:none; width:100%;}
+.menu ul li a{width:100%; color: #4f5050;}
+.menu ul li a:hover{color:#26a5dd;}
+.menu li:hover > ul li {border-bottom: 1px solid #4f5050;}
+.arrow_box:after, .arrow_box:before{display:none;}
+#header .main-header .logo-main { display: inline-block; float: none; text-align: center; width: 100%; }
+#header .main-header .social-networks { display: inline-block; float: none !important; margin: 20px 0 0; text-align: center; width: 100%; }
+.social-networks ul { display: inline-block; float: none; width: 100%; }
+.social-networks li { display: inline-block; float: none; padding: 0 5.2px; }
+#header .main-header .logo-main img { width: auto; display: inline-block; }
+#header header .main-menu { margin: 0; width: 100%; }
+#header header .main-menu #menu li a { font-size: 15px; padding: 5px 0; }
+#header header .main-menu #menu { border-right: none; }
+#header .contact-media { margin: 0; padding-bottom: 13px; }
+#header .contact-media .media-contact { display: inline-block; float: none; text-align: center; width: 100%; }
+#header .contact-media .media-contact li { padding: 0 15px 0 0; }
+#header .contact-media .search { float: none; margin: 15px 0 0; text-align: center; width: 100%; }
+#header .contact-media .search li { padding: 0 3px; }
+#container .our-details h4 input[type="button"]{font-size: 16px;padding: 8px 0;}
+.contact_txt p{font-size:15px;}
+.career .openning p{font-size:14px;font-family: "Roboto-Light"; line-height:23px;}
+.career .openning ul li {font-family: "Roboto-Light";font-size: 14px;}
+.career{margin:29px 0;}
+.career .form-section {margin-top: 20px;}
+.inner-pages .about-company.career-page {padding-bottom: 0;}
+.career .openning h5 {font-size: 19px;margin: 16px 0;}
+.inner-pages ul.faq li{width:100%;}
+.phone_detail > p { display: inline-block;margin: 0 10px 0 0;text-align: center;}
+#container .inner-container .media-services li { width: 49%; margin-bottom: 31px; }
+#container .offers{padding-top:11px;}
+#container .our-details p{font-size: 15px;}
+.right-side img{width:100%;}
+.career .openning, .career .form-section{width:100%; float:left;}
+.career .form-section form ul li input[type="text"], .career .form-section form ul li textarea{width:80.5%;padding: 9px 7px;}
+#container .our-details .founder-sec-right li, #container .our-details .founder-sec-left li {font-size: 15px; }
+#container .inner-container .media-services{padding-bottom:0;}
+#container .offers .left-side {float: left;width: 100%;}
+#container .offers .right-side {float: left;text-align: left;width: 37%;}
+.right-side img {margin: 8px 0 0;width: 100px;}
+#container .offers .left-side p {font-size: 15px;line-height: 19px;}
+#container .offers .left-side input[type="button"]{width:131px; font-size:19px;}
+#container .our-details .founder-sec-left { width: 100%; }
+#container .our-details .founder-sec-right { float: left; margin: 26px 0 0; width: 100%; }
+#container .our-details h3 { margin-bottom: 9px; }
+#container .our-details p { margin-bottom: 12px; }
+#container .our-details .founder-sec-right li { float: left;width: 100%; }
+#itemContainer li { width: 16.9%; height: 97px; }
+#itemContainer li img { width: 100%; }
+#container .our-details h4 { margin-top: 0; padding-top: 15px;}
+.copy .social-networks { width: 100%; }
+#container .inner-container .subscribe-mail { margin-bottom: 28px; }
+#container .inner-container{margin-top: 10px;}
+.inner-pages .about li {float: left;margin-right: 0;width: 100%;}
+.fill_details .enquiry_form{width:90%;}
+.addressContactUs {padding: 26px 5% 0;width: 90%;}
+.enquiry_form form ul li input[type="submit"]{width:33%;}
+.addressContactUs ul.corporate_details li .phone_detail p strong {font-size: 14px;}
+.addressContactUs ul.corporate_details li .phone_detail{text-align:center;}
+#footer {  padding: 31px 0 0; }
+#footer .f-links { }
+#footer .f-links.publisher { }
+#footer .f-links.social {margin: 0 0 0 11px;}
+#footer .copy {display: inline-block;float: none;text-align: center;width: 100%;}
+.copy .social-networks {display: inline-block;float: none;}
+#footer .copy p{float:none; text-align:center;}
+}
+@media only screen and (max-width: 670px) {
+	.career .form-section form ul li input[type="text"], .career .form-section form ul li textarea{width: 71.8%;}
+    #Gallery img{width:100%;}
+
+}
+@media only screen and (max-width: 480px) {
+#container .inner-container .media-services li { width: 100%; border-bottom: 1px solid #d7d7d7; margin: 0 0 20px; padding-bottom: 20px; width: 100%; }
+#container .inner-container .media-services li:last-child { border: none; }
+#container .our-details .founder-sec-right li p{width:88%;}
+.customer-care{display: inline-block;float: none;text-align: center;}
+.customer-care > span {display: inline-block;float: none;height: 70px;text-align: center;width: 100%;}
+.addressContactUs ul.corporate_details li .company_address h3, .addressContactUs ul.corporate_details li .phone_detail h3, .addressContactUs ul.corporate_details li.end h3{margin-bottom:0;}
+#owl-demo .item img{display:inline-block;}
+.customer-care p{text-align:right; width:100%;}
+#container .offers .left-side input[type="button"]{margin-top:15px;}
+.career .form-section form ul li label{font-family: "Roboto-Light";font-size: 14px;margin-bottom: 7px;}
+.career .form-section form ul li input[type="text"], .career .form-section form ul li textarea {width: 93%;}
+.btn1{right: 4px;top: 35px;}
+.right-side img{width:60px;}
+#footer .f-links {margin-bottom: 10px !important;width: 100% !important;}
+}
+
+@media only screen and (min-width:481px) and (max-width: 760px) {
+#footer .f-links {width: 25%;}
+#footer .f-links.advertiser {width: 39%;}
+#footer .f-links.publisher {width: 32%;}
+#footer .f-links.social {margin: 26px 0 0;width: 90%;}
+}
