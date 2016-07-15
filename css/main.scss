@@ -42,7 +42,7 @@ $default-font-size: 18px;
 
 $header-height:80px;
 
-$max-grid-width:1140px;
+$max-grid-width:1182px;
 $modal-max-width : 400px;
 
 $header-position:fixed;   // required
@@ -505,7 +505,8 @@ body{
 
 .header{
 	background: #fff;
-	height:$header-height;
+	height:100px;
+	overflow:hidden;
 	border-bottom:1px inset #ddd;
 	@if $header-position == fixed {
 		@extend .fixed-pos;
@@ -513,6 +514,14 @@ body{
 		left:0;
 		top:0;
 		z-index:999;  // default google place z-index is 1000
+	}
+	
+	.header-2{
+		margin-top:3px;
+		background: #fff;				
+		border-bottom:1px solid #ddd;
+		height:40px;
+		overflow:hidden;
 	}
 	
 	.cart-icon{
@@ -537,6 +546,12 @@ body{
 	}
 	
 	.select-loc{
+		line-height:normal;
+		margin-left:235px;
+		
+		width: calc(100% - 500px);
+		text-align: center;
+		
 		.loc-disabler{
 			@extend .abs-pos;
 			width:100%;
@@ -546,12 +561,18 @@ body{
 			background:rgba(255,255,255,0.5);
 		}
 		& > div{
+			
+			&:nth-child(1){
+				border:0px;
+			}
+			
+			&:nth-child(2){
+				display:inline-block;
+				width:340px;
+			}
 			background:#fff;
 			line-height:normal;
-			padding:5px;
-			display:inline-block;
-			margin-left:235px;
-			//border-radius:4px;
+			padding:5px;						
 			border:2px solid $theme-color-1;
 			i{
 				color:$theme-color-3;
@@ -618,7 +639,8 @@ body{
     white-space: nowrap;
     overflow-x: scroll;
 	.menu-container{
-		line-height: 38px;
+		line-height: 30px;
+		padding-bottom: 10px;
 		
 		&>div {
 			display: inline-block;
@@ -637,7 +659,10 @@ body{
 			&.selected {
 				//background: #fff;
 				//color: $theme-color-1;
-				border-bottom:2px solid $theme-color-1;
+				background:$theme-color-1;
+				color:#fff;
+				border-radius:2px;
+				//border-bottom:2px solid $theme-color-1;
 			}
 		}
 	}
@@ -656,7 +681,6 @@ body{
 	}
 	
 	color:#fff;
-	padding:5px 15px ;
 	i{
 		font-size:30px;
 	}
@@ -680,13 +704,7 @@ body{
 	@if $header-position == fixed {
 		margin-top:$header-height;
 	}
-	height:100%;
-	.header-2{
-		background: #fff;		
-		border-bottom:1px solid #ddd;
-		height:40px;
-		overflow:hidden;
-	}
+	height:100%;	
 }
 
 .nav-container{
@@ -698,8 +716,7 @@ body{
 		vertical-align:top;
 		display:inline-block;
 		height:$header-height;
-		line-height:$header-height;
-		@extend .uppercase;
+		line-height:$header-height;		
 		padding-left:15px;
 		padding-right:15px;
 		
@@ -714,6 +731,14 @@ body{
 		&:not(.profile-view-cont):hover{
 			color:#fff;
 		}*/
+	}
+	
+	.login-button a{
+		background:$theme-color-1;		
+		color: #fff;
+		padding: 11px 20px;
+		border-radius: 3px;
+		font-size: 14px;
 	}
 }
 
@@ -764,17 +789,33 @@ body{
 .container{
 	#index{
 		.item-container{
+			margin-top:100px;
 			margin-bottom:60px;
 			.item{
 				display:inline-block;
-				width:31.3%;
-				height:300px;
-				margin:1%;
+				width:49%;
+				height:450px;
+				
+				margin-top:1%;
+				margin-bottom:1%;
+				
+				&:nth-child(odd){
+					margin-right:1%;
+				}
+				
+				&:nth-child(even){
+					margin-left:1%;
+				}
+				
 				border:1px solid #ddd;
 				box-sizing:border-box;
 				overflow:hidden;
 				vertical-align:top;
 				background-color:#fff;
+				box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);				
+				-webkit-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+				-moz-box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+				
 				.item-controller{
 					position:absolute;
 					bottom:0;
@@ -1306,10 +1347,9 @@ body{
 
 
 #index_slider {
-	margin: 20px auto;
+	margin: 100px auto;
 	display: block;
 	width: 90%;
-	// height: 100vh;
 
 	@media screen and (max-width: 992px) {
 		overflow: hidden;

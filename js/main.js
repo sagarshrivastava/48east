@@ -1034,7 +1034,7 @@ function loggedIn() {
 	// change login to logout
 	//$('.login-button.login').removeClass('login').html('Logout').addClass('logout');
 	
-	$('.login-button.login').removeClass('login').html(username+'&nbsp<i class="fa fa-caret-down"></i>').addClass('view-profile');
+	$('.login-button.login').removeClass('login').html('Hi, '+username+'&nbsp<i class="fa fa-caret-down"></i>').addClass('view-profile');
 	$('.header').find('.profile-view-cont').addClass('profile-control-enabled')
 	$('#login_overlay').hide();
 	
@@ -1833,6 +1833,7 @@ $(document).ready(function(){
 		var cat_id = $(this).data('cat-id');
 		$(this).addClass('selected');
 		renderItems(cat_id)
+		
 	})
 	
 	$(document).on('click','.item-container .item-add',function(){
@@ -2917,7 +2918,7 @@ function renderCategory() {
 			var cat = _.orderBy(d.objects, ['sort_order'], ['asc']);
 			
 			for (var x in cat) {
-				catMarkup += '<div data-cat-id='+cat[x].id+' class="menu-tabs">'+cat[x].name+'</div>';
+				catMarkup += '<div data-cat-id='+cat[x].id+' class="menu-tabs '+(x==0 ? 'selected' : '')+'">'+cat[x].name+'</div>';
 			}
 			catMarkup += '<div>'; 
 		}
@@ -3000,6 +3001,10 @@ function renderItems(cat_id){
 		$('#index').find('.page-container').html(itemHTML);
 		$('.spinner').hide();
 	}
+	
+	$("html, body").animate({
+		scrollTop: 600
+	},50);
 }
 
 function renderCart(){
