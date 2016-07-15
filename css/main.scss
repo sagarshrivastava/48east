@@ -17,6 +17,7 @@
 }
 
 @include font-face("Aspira-Heavy", url("../fonts/aspira-heavy.woff"));
+@include font-face("Gotham", url("../fonts/Gotham-Book.otf"));
 
 //site specific constants
 
@@ -34,8 +35,8 @@ $default-color: #373a3c;
 
 $secondary-color:#2ecc71; // green
 
-$font-family: Helvetica, Arial, sans-serif;
-$nav-font-family: Aspira-Heavy;
+$font-family: Gotham;
+$nav-font-family: Gotham;
 
 $default-font-size: 18px;
 
@@ -120,6 +121,11 @@ a,a:link,a:visited,a:hover{
 .text-center{
 	text-align:center;
 }
+
+.text-right{
+	text-align:right;
+}
+
 .small-text{
 	font-size:11px;
 }
@@ -509,6 +515,11 @@ body{
 		z-index:999;  // default google place z-index is 1000
 	}
 	
+	.cart-icon{
+		background-image:url('../img/cart.png');
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 	&>div {
 		height:$header-height;
 		line-height:$header-height;
@@ -552,6 +563,7 @@ body{
 			width:300px;
 			margin-left: 25px;
 			border-left:1px solid $theme-color-1;
+			font-family:Gotham;
 		}
 	}
 	
@@ -631,9 +643,12 @@ body{
 	}
 }
 #cart_icon{
+	
+	/*
 	-webkit-box-shadow: -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: -2px 0px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow: -2px -1px 4px -1px rgba(50, 50, 50, 0.75);
+	*/
 	
 	&.enabled{
 		cursor:pointer;
@@ -647,15 +662,10 @@ body{
 	}
 	
 	.counter{
-		position:absolute;
-		font-size: 12px;
+		font-size: 12px;		
+		color:#fff;
+		margin-top: 8px;
 		display: inline-block;
-		background: rgba(255,255,255,0.9);
-		color: $theme-color-1;
-		font-weight: bold;
-		padding: 1px 4px;
-		border-radius: 5px;
-		margin-left: -1px;
 	}
 }
 
@@ -682,9 +692,7 @@ body{
 .nav-container{
 	right:0;
 	top:0;
-	@if global-variable-exists(nav-font-family) {
-		font-family:'Aspira-Heavy';
-	}
+	font-family:'Gotham';	
 	color:$theme-color-1;	
 	& > div{
 		vertical-align:top;
@@ -864,13 +872,14 @@ body{
 			cursor:pointer;
 			touch-action:manipulation;						
 			
+			/*
 			#footer_cart_icon {
 				@extend #cart_icon;
 				padding:5px;
 				.counter{
 					position:relative;
 				}
-			}
+			}*/
 		}
 	}
 	.page-container.default-order-flow-layout{

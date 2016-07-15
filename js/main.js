@@ -939,10 +939,10 @@ function init() {
 	}
 	if(CART.meta.item_count > 0) {
 		$('#cart_icon').addClass('enabled').find('.counter').html(CART.meta.item_count);
-		$('.footer-cart').addClass('enabled').find('.counter').html(CART.meta.item_count);
+		//$('.footer-cart').addClass('enabled').find('.counter').html(CART.meta.item_count);
 	}else{
 		$('#cart_icon').removeClass('enabled').find('.counter').hide()
-		$('.footer-cart').removeClass('enabled').find('.counter').hide()
+		//$('.footer-cart').removeClass('enabled').find('.counter').hide()
 	}
 	
 	initRoute();
@@ -977,7 +977,7 @@ function resetCart(){
 	};
 	
 	$('#cart_icon').removeClass('enabled').find('.counter').hide();
-	$('.footer-cart').removeClass('enabled').find('.counter').hide();
+//	$('.footer-cart').removeClass('enabled').find('.counter').hide();
 	
 	$('.item-container > .item').each(function(i,d) {
 		$(d).find('.cart-preview').hide();
@@ -1928,9 +1928,11 @@ $(document).ready(function(){
 	$(document).on('click','#cart_icon.enabled',function(){
 		myRouter.cart.routeTo();
 	})
+	
+	/*
 	$(document).on('click','.footer-cart.enabled',function(){
 		myRouter.cart.routeTo();
-	})
+	})*/
 	
 	$(document).on('click','.global-back',function(){
 		history.go(-1);
@@ -2057,15 +2059,9 @@ $(document).ready(function(){
 		localStorage.setItem('cart',JSON.stringify(CART));
 
 		if(CART.meta.item_count > 0) {
-			$('#cart_icon').addClass('enabled').find('.counter').html(item_count).fadeIn();			
-			$('.footer-cart').addClass('enabled').find('.counter').html(item_count).fadeIn();			
-			
-			$('.footer-cart').addClass( "shake" ).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
-				$(this).removeClass( "shake" );
-			});
+			$('#cart_icon').addClass('enabled').find('.counter').html(item_count).fadeIn();						
 		}else{
-			$('#cart_icon').removeClass('enabled').find('.counter').hide();
-			$('.footer-cart').removeClass('enabled').find('.counter').hide();
+			$('#cart_icon').removeClass('enabled').find('.counter').hide();			
 		}
 		if(quant > 0) {
 			data.el.find('.counter').html(quant);
@@ -2921,7 +2917,7 @@ function renderCategory() {
 			var cat = _.orderBy(d.objects, ['sort_order'], ['asc']);
 			
 			for (var x in cat) {
-				catMarkup += '<div data-cat-id='+cat[x].id+' class="menu-tabs '+(x==0 ? 'selected' : '')+'">'+cat[x].name+'</div>';
+				catMarkup += '<div data-cat-id='+cat[x].id+' class="menu-tabs">'+cat[x].name+'</div>';
 			}
 			catMarkup += '<div>'; 
 		}
