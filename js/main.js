@@ -181,6 +181,7 @@ var myRouter = {
 		id:'#index',
 		name:'index',
 		initFunc: function() {
+			scrolltoTop()
 			myRouter.redirect = false;
 			//console.log('index rendered');
 			$('.page').hide();
@@ -196,6 +197,7 @@ var myRouter = {
 		id:'#cart',
 		name:'cart',
 		initFunc: function() {
+			scrolltoTop()
 			myRouter.redirect = false;
 			//console.log('cart rendered');
 			$('.page').hide();
@@ -217,6 +219,7 @@ var myRouter = {
 		id:'#checkout',
 		name:'checkout',
 		initFunc: function(){
+			scrolltoTop();
 			locationDisabled(true);			
 			if(loginStat()){
 				myRouter.redirect = false;
@@ -239,6 +242,7 @@ var myRouter = {
 		name:'orders',
 		redirect:false,
 		initFunc: function(){
+			scrolltoTop();
 			if(loginStat()){
 				myRouter.redirect = false;
 				//console.log('order rendered');
@@ -263,6 +267,7 @@ var myRouter = {
 		redirect:false,
 		initFunc: function(){
 			locationDisabled(true);
+			scrolltoTop();
 			if(loginStat()){
 				myRouter.redirect = false;
 				//console.log('thankyou rendered');
@@ -284,6 +289,7 @@ var myRouter = {
 		name:'wallet',
 		redirect:false,
 		initFunc: function(){
+			scrolltoTop();
 			locationDisabled(true);
 			if(loginStat()){
 				myRouter.redirect = false;				
@@ -302,7 +308,11 @@ var myRouter = {
 		}
 	}
 }
-
+function scrolltoTop(){
+	$("html, body").animate({
+		scrollTop: 0
+	},0);
+}
 function init() {
 	if(loginStat()) { 
 		loggedIn();
