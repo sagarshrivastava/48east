@@ -1357,7 +1357,7 @@ body{
 	margin: 100px auto;
 	display: block;
 	width: 90%;
-	height: calc(100vh - $header-height) !important;
+	max-height: calc(100vh - $header-height) !important;
 	
 	.slick-slide{
 		img{
@@ -1436,6 +1436,11 @@ body{
 }
 
 @media screen and (max-width:940px) {
+	#index_slider{
+		.control-c{
+			display:none !important;
+		}
+	}
 	.header{
 		.select-loc{
 			width: calc(100% - 280px);
