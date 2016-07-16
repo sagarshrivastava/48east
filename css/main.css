@@ -796,7 +796,7 @@ body {
     border-bottom: 1px solid #ddd;
     padding: 12px; }
     .container #cart .cart-container .cart-item-container .div-table-cell:nth-child(1) {
-      width: 70%; }
+      width: 60%; }
     .container #cart .cart-container .cart-item-container .div-table-cell.no-wrap {
       white-space: nowrap; }
     .container #cart .cart-container .cart-item-container .div-table-cell.bordered-l-r {

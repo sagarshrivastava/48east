@@ -926,9 +926,15 @@ function renderSlots(d){
 	var slots = JSON.parse(localStorage.getItem('selected_location')).biz_detail.biz.time_slots;
 	var available_slots = _.filter(slots, { 'day': day});
 	
+	
 	var slotsMarkup = '';
+	var now  =  new Date().getTime();
+	
 	for(var x in available_slots){
-		slotsMarkup += '<option value="'+available_slots[x].start_time+'-'+available_slots[x].end_time+'">'+tConvert(available_slots[x].start_time)+' - '+tConvert(available_slots[x].end_time)+'</option>';
+		var startTime = todayInMilli(available_slots[x].start_time.split(':'));
+		if(startTime > now){
+			slotsMarkup += '<option value="'+available_slots[x].start_time+'-'+available_slots[x].end_time+'">'+tConvert(available_slots[x].start_time)+' - '+tConvert(available_slots[x].end_time)+'</option>';
+		}		
 	}
 	
 	$('.timepicker').html(slotsMarkup);
@@ -945,7 +951,7 @@ function todayInMilli(time_string){
 	);
 	return selectedTimeToday.getTime();
 }
-
+/*
 function timepickerTomilli(timepickerString) {
 	var deliveryTimeArr = timepickerString.replace(/:/g, '').split(' ');
 	var hour = deliveryTimeArr[0];
@@ -960,6 +966,7 @@ function timepickerTomilli(timepickerString) {
 	
 	return todayInMilli([hour24, min, 0]);
 }
+*/
 ////////////////////////////////////////////////////////////--core functions end--///////////////////////////////////////////////////////////////////////
 
 $(document).ready(function(){
@@ -2458,8 +2465,9 @@ function renderCart(){
 		
 		var cartMarkup = '<div class="div-table-row bold table-header">'+
 		'<div class="div-table-cell">Items</div>'+
+			'<div class="div-table-cell no-wrap text-center">Price (<i class="fa fa-inr"></i>)</div>'+
 			'<div class="div-table-cell no-wrap text-center">Quantity</div>'+
-			'<div class="div-table-cell no-wrap text-center">Price</div>'+
+			'<div class="div-table-cell no-wrap text-center">Total</div>'+
 		'</div>';
 		for(var x in CART.items) {
 			var optionString = false;
@@ -2472,9 +2480,10 @@ function renderCart(){
 			}
 			cartMarkup += '<div class="div-table-row cart-item" '+(CART.items[x].sig ? 'data-sig="'+CART.items[x].sig+'"' :'')+ 'data-id="'+CART.items[x].id+'">'+
 					'<div class="div-table-cell">'+CART.items[x].item_title+(optionString ? ' - '+optionString : '')+'</div>'+
+					'<div class="div-table-cell text-center">'+(CART.items[x].item_price+(CART.items[x].total_options_price ? CART.items[x].total_options_price : 0))+'</div>'+
 					'<div class="div-table-cell no-wrap text-center bordered-l-r cart-pricing-quant">'+
 					'<span class="red cart-del" data-action="del"><i class="fa fa-minus"></i></span>'+
-					'<span class="cart-pricing">'+CART.items[x].quantity+' x '+(CART.items[x].item_price+(CART.items[x].total_options_price ? CART.items[x].total_options_price : 0))+'</span>'+
+					'<span class="cart-pricing">'+CART.items[x].quantity+'</span>'+
 					'<span class="green cart-del" data-action="add"><i class="fa fa-plus"></i></span>'+
 					'</div>'+
 					'<div class="div-table-cell bold no-wrap text-center"><i class="fa fa-inr"></i>&nbsp;'+(CART.items[x].quantity*(CART.items[x].item_price+(CART.items[x].total_options_price ? CART.items[x].total_options_price : 0)))+'</div>'+
@@ -2483,25 +2492,30 @@ function renderCart(){
 		cartMarkup += '<div class="div-table-row bold small-text">'+
 		'<div class="div-table-cell">Sub Total</div>'+
 			'<div class="div-table-cell no-wrap text-center"></div>'+
+			'<div class="div-table-cell no-wrap text-center"></div>'+
 			'<div class="div-table-cell no-wrap text-center"><i class="fa fa-inr"></i>&nbsp;'+CART.meta.total+'</div>'+
 		'</div>'+
 		'<div class="div-table-row bold small-text">'+
 		'<div class="div-table-cell">Total Tax</div>'+
+			'<div class="div-table-cell no-wrap text-center"></div>'+
 			'<div class="div-table-cell no-wrap text-center">(VAT + TAX)</div>'+
 			'<div class="div-table-cell no-wrap text-center"><i class="fa fa-inr"></i>&nbsp;'+total_tax+'</div>'+
 		'</div>'+
 		(packagingCharge ? '<div class="div-table-row bold small-text">'+
 			'<div class="div-table-cell">Packaging</div>'+
 			'<div class="div-table-cell no-wrap text-center"></div>'+
+			'<div class="div-table-cell no-wrap text-center"></div>'+
 			'<div class="div-table-cell no-wrap text-center"><i class="fa fa-inr"></i>&nbsp;'+store.packaging_charge+'</div>'+
 		'</div>' : '')+
 		(deliveryCharge ? '<div class="div-table-row bold small-text">'+
 			'<div class="div-table-cell">Packaging</div>'+
 			'<div class="div-table-cell no-wrap text-center"></div>'+
+			'<div class="div-table-cell no-wrap text-center"></div>'+
 			'<div class="div-table-cell no-wrap text-center"><i class="fa fa-inr"></i>&nbsp;'+store.delivery_charge+'</div>'+
 		'</div>' : '')+
 		'<div class="div-table-row bold table-footer">'+
 			'<div class="div-table-cell ">Total</div>'+
+				'<div class="div-table-cell no-wrap text-center"></div>'+
 				'<div class="div-table-cell no-wrap text-center"></div>'+
 				'<div class="div-table-cell no-wrap text-center"><i class="fa fa-inr"></i>&nbsp;'+total_after_added_tax+'</div>'+
 			'</div>'+
