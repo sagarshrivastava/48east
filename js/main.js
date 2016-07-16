@@ -1038,9 +1038,7 @@ function loggedIn() {
 	$('.header').find('.profile-view-cont').addClass('profile-control-enabled')
 	$('#login_overlay').hide();
 	
-	if(window.innerWidth <= 940) {
-		$('.nav-container').hide();
-	}
+	
 	getuserInfo(function(d){
 		localStorage.setItem('user_info', JSON.stringify(d));
 	})
@@ -2290,7 +2288,7 @@ $(document).ready(function(){
 		$('#complex_item').hide();
 	})
 	
-	$('#place_order_button .button.enabled').click(function(){				
+	$('#place_order_button.button.enabled').click(function(){				
 		
 		if(!CART.meta.address_id){
 			$("html, body").animate({
@@ -2470,12 +2468,7 @@ $(document).ready(function(){
 	$(document).on('click','.route-to-wallet',function(){
 		myRouter.wallet.routeTo();
 		//this should be for any routing
-		if($('.ham-menu').css('display') == 'block') {
-			//it's mobile device			
-			$('.nav-container').hide();
-		}else{
-			$('.view-profile').trigger('click');
-		}		
+		$('.view-profile').trigger('click');			
 	})
 })
 
@@ -3146,10 +3139,7 @@ function closeLoginPopup() {
 
 
 function loginPrompt(r) {
-	$('#login_overlay').show();
-	if(window.innerWidth <= 940) {
-		$('.nav-container').hide();
-	}
+	$('#login_overlay').show();	
 }
 
 

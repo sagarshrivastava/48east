@@ -43,11 +43,11 @@
                     </button>
 				</div>
 				<div class="select-loc">
-					<div class="uppercase small-text bold">Weekly Changing Menu</div>
+					<div class="uppercase small-text bold theme-color-text">Weekly Changing Menu</div>
 					<div class="relative-pos">
 						<div class="loc-disabler hide"></div>
-						<i class="fa fa-crosshairs valign-absolute-abs"></i>
-						<input type="text" placeholder="Search Location" id="google_location" />
+						<i class="fa fa-search"></i>
+						<input type="text" placeholder="Your Locality" id="google_location" />
 					</div>
 				</div>
 			</div>
@@ -82,14 +82,12 @@
 						<div><i aria-hidden="true" class="fa fa-shopping-basket fa-3x"></i>&nbsp;</div>
 						<div>Your Order</div>
 					</div>
-					<div class="cart-item-container div-table"></div>
-					<div class="cart-nav padding-10">
-						<div></div>
-						<div>
-						<a class="m-l-10 button default float-right large route-to-checkout enabled">Checkout</a></div>
-						<a class="button secondary float-right large" href="order.html#/">Add More Items</a>						
-						<div class="clearfix"></div>
-					</div>
+					<div class="cart-item-container div-table"></div>					
+				</div>
+				<div class="cart-nav padding-10 text-center">					
+					<a class="button secondary  large" href="order.html#/">Continue Shopping</a>						
+					<a class="m-l-10 button default  large route-to-checkout enabled">Checkout</a>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
@@ -158,13 +156,14 @@
 									</div>
 									<div class="m-t-10 wallet-reload-link hide">
 										<div class="uppercase small-text bold route-to-wallet">Reload Wallet</div>										
-									</div>
-									<div id="place_order_button" class="m-t-20">
-										<a class="button default large enabled">Confirm Order</a>
-									</div>
+									</div>																		
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="m-t-20 text-center">
+						<a class="button secondary large" href="#/">Continue Shopping</a>
+						<a id="place_order_button" class="button default large enabled">Confirm Order</a>						
 					</div>
 				</div>
 			</div>		
@@ -358,7 +357,7 @@
 <!--<script src="https://maps.googleapis.com/maps/api/js?&libraries=places&key=AIzaSyCO6x3RQb2KTIsDL3Y_Od4LzV82BrbBHQ4" type="text/javascript"></script>-->
 <script src="https://maps.googleapis.com/maps/api/js?&libraries=places" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-<script type="text/javascript" src="js/main.js?v=1.3"></script>
+<script type="text/javascript" src="js/main.js?v=1.4"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </body>
 </html>
