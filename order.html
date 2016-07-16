@@ -15,6 +15,7 @@
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 	<link href="css/main.css?v=1.0" rel="stylesheet" />
 	</head>
 <body>
@@ -142,10 +143,16 @@
 										<div class="messaging m-t-10"></div>
 									</div>
 									<div class="delivery-time m-t-10">
+										<div class="uppercase small-text bold input-label">Delivery Date:</div>
+										<div class="relative-pos datepicker-cont">
+											<input type="readonly" class="datepicker" /> 
+										</div>
+									</div>
+									<div class="delivery-time m-t-10">
 										<div class="uppercase small-text bold input-label">Delivery Time:</div>
 										<div class="relative-pos timepicker-cont">
 											<!--<div class="timepicker-icon valign-absolute-abs"><i class="fa fa-clock-o"></i></div>-->
-											<input type="readonly" class="timepicker" /> 
+											<select class="timepicker"></select> 
 										</div>
 									</div>
 									<div class="payment-gateway m-t-10">
@@ -357,6 +364,7 @@
 <!--<script src="https://maps.googleapis.com/maps/api/js?&libraries=places&key=AIzaSyCO6x3RQb2KTIsDL3Y_Od4LzV82BrbBHQ4" type="text/javascript"></script>-->
 <script src="https://maps.googleapis.com/maps/api/js?&libraries=places" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <script type="text/javascript" src="js/main.js?v=1.4"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </body>
