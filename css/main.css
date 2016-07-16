@@ -925,7 +925,7 @@ body {
   #index_slider .slick-slide img {
     width: 100%; }
   #index_slider .slick-list {
-    height: calc(100vh - 130px) !important; }
+    max-height: calc(100vh - 130px) !important; }
 
 .slick-next {
   width: 25px !important;
@@ -1070,7 +1070,7 @@ body {
   	overflow-x: scroll;
   }*/
   .container #index .item-container .item {
-    height: 280px; } }
+    height: 400px; } }
 @media screen and (max-width: 480px) {
   .header .select-loc {
     padding-top: 53px;
