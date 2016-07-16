@@ -1134,6 +1134,50 @@ body {
     .footer li a {
       cursor: pointer; }
 
+.aboutUs {
+  background: #A49FA8;
+  margin: 166px auto 0px;
+  position: relative;
+  width: 89.8%; }
+  .aboutUs p {
+    color: white;
+    font-family: Gotham;
+    font-size: 18px;
+    padding: 12px 40px 30px; }
+    @media screen and (max-width: 768px) {
+      .aboutUs p {
+        color: white;
+        font-family: GothamRegular;
+        font-size: 15px;
+        padding: 12px 12px;
+        width: 100%; } }
+
+.faq {
+  background: #A49FA8;
+  margin: 166px auto 0px;
+  width: 89.8%;
+  position: relative;
+  min-height: 1000px; }
+  .faq .faqBody {
+    font-family: Gotham;
+    padding: 12px 40px 30px; }
+    @media screen and (max-width: 768px) {
+      .faq .faqBody {
+        color: white;
+        font-family: GothamRegular;
+        font-size: 15px;
+        padding: 12px 12px;
+        width: 100%; } }
+    .faq .faqBody .questions {
+      color: #C1272D;
+      font-size: 18px; }
+    .faq .faqBody .answers {
+      color: white;
+      font-size: 16px;
+      padding: 20px 30px; }
+      .faq .faqBody .answers a {
+        color: #0c0531; }
+
 .wickedpicker {
   -webkit-user-select: none;
   -moz-user-select: none;
