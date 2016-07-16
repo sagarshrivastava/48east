@@ -1085,7 +1085,8 @@ body {
     margin: 160px auto 0px auto; } }
 @media screen and (max-width: 460px) {
   .container #index .item-container .item {
-    width: 96%; }
+    width: 96%;
+    margin: 1%; }
 
   /*
   #place_order_button{
