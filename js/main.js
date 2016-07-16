@@ -186,6 +186,7 @@ var myRouter = {
 			//console.log('index rendered');
 			$('.page').hide();
 			$(this.id).show();
+			$('#category_menu').show();
 			locationDisabled(false);
 		},
 		routeTo: function(){
@@ -202,6 +203,7 @@ var myRouter = {
 			//console.log('cart rendered');
 			$('.page').hide();
 			$(this.id).show();
+			$('#category_menu').hide();
 			locationDisabled(true);
 			cartInit();
 		},
@@ -221,6 +223,7 @@ var myRouter = {
 		initFunc: function(){
 			scrolltoTop();
 			locationDisabled(true);			
+			$('#category_menu').hide();
 			if(loginStat()){
 				myRouter.redirect = false;
 				//console.log('checkout rendered');
@@ -254,7 +257,7 @@ var myRouter = {
 				myRouter.redirect = 'order';
 				loginPrompt();
 			}
-			
+			$('#category_menu').hide();
 		},
 		routeTo: function() {
 			history.pushState({},'','#/'+this.name);
@@ -277,7 +280,7 @@ var myRouter = {
 				myRouter.redirect = 'index';
 				loginPrompt();
 			}
-			
+			$('#category_menu').hide();
 		},
 		routeTo: function() {
 			history.replaceState({},'','#/'+this.name);
@@ -300,7 +303,7 @@ var myRouter = {
 				myRouter.redirect = 'wallet';
 				loginPrompt();
 			}
-			
+			$('#category_menu').hide();
 		},
 		routeTo: function() {
 			history.pushState({},'','#/'+this.name);
