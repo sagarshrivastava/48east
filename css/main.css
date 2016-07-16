@@ -432,6 +432,8 @@ body {
     -webkit-box-shadow: -1px 4px 4px -1px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: -1px 4px 4px -1px rgba(50, 50, 50, 0.75);
     box-shadow: -1px 4px 4px -1px rgba(50, 50, 50, 0.75); }
+    .header .profile-view-cont.responsive.profile-control-enabled {
+      display: none; }
     .header .profile-view-cont.responsive > div {
       padding: 10px;
       border-bottom: 1px solid #C1272D;
@@ -1066,7 +1068,13 @@ body {
     padding-top: 53px;
     width: 100%;
     margin-left: 0;
-    text-align: center; } }
+    text-align: center; }
+
+  .container .page-container.default-order-flow-layout {
+    padding-top: 60px; }
+
+  #index_slider {
+    margin: 160px auto 0px auto; } }
 @media screen and (max-width: 460px) {
   .container #index .item-container .item {
     width: 96%; }
