@@ -1845,7 +1845,7 @@ $(document).ready(function(){
 							}
 						}
 						
-						RAZOR_CONFIG.amount = (getPayableAmount() * 100); // in paisa;						
+						RAZOR_CONFIG.amount = (parseInt(getPayableAmount()) * 100); // in paisa;						
 						var rzp1 = new Razorpay(RAZOR_CONFIG);
 						rzp1.open();
 						
