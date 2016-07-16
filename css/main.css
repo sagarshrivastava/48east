@@ -920,7 +920,7 @@ body {
 #index_slider {
   margin: 100px auto;
   display: block;
-  width: 90%;
+  width: 95%;
   max-height: calc(100vh - $header-height) !important; }
   #index_slider .slick-slide img {
     width: 100%; }
