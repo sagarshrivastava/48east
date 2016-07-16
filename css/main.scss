@@ -1505,15 +1505,10 @@ body{
 }
 @media screen and (max-width:850px) {
 	.container #index .item-container .item{
-		height:250px;
+		height: 340px;
 	}
 }
 
-@media screen and (max-width:850px) {
-	.container #index .item-container .item{
-		height:200px;
-	}
-}
 @media screen and (max-width:810px) {
 	.header{
 		.select-loc {
