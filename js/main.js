@@ -186,6 +186,7 @@ var myRouter = {
 			//console.log('index rendered');
 			$('.page').hide();
 			$(this.id).show();
+			$('#category_menu').show();
 			locationDisabled(false);
 		},
 		routeTo: function(){
@@ -202,6 +203,7 @@ var myRouter = {
 			//console.log('cart rendered');
 			$('.page').hide();
 			$(this.id).show();
+			$('#category_menu').hide();
 			locationDisabled(true);
 			cartInit();
 		},
@@ -221,6 +223,7 @@ var myRouter = {
 		initFunc: function(){
 			scrolltoTop();
 			locationDisabled(true);			
+			$('#category_menu').hide();
 			if(loginStat()){
 				myRouter.redirect = false;
 				//console.log('checkout rendered');
@@ -254,7 +257,7 @@ var myRouter = {
 				myRouter.redirect = 'order';
 				loginPrompt();
 			}
-			
+			$('#category_menu').hide();
 		},
 		routeTo: function() {
 			history.pushState({},'','#/'+this.name);
@@ -277,7 +280,7 @@ var myRouter = {
 				myRouter.redirect = 'index';
 				loginPrompt();
 			}
-			
+			$('#category_menu').hide();
 		},
 		routeTo: function() {
 			history.replaceState({},'','#/'+this.name);
@@ -300,7 +303,7 @@ var myRouter = {
 				myRouter.redirect = 'wallet';
 				loginPrompt();
 			}
-			
+			$('#category_menu').hide();
 		},
 		routeTo: function() {
 			history.pushState({},'','#/'+this.name);
@@ -929,12 +932,18 @@ function renderSlots(d){
 	
 	var slotsMarkup = '';
 	var now  =  new Date().getTime();
+	var todayDayName = new Date().getUTCDay();
 	
 	for(var x in available_slots){
+		
 		var startTime = todayInMilli(available_slots[x].start_time.split(':'));
-		if(startTime > now){
+		if(d == todayDayName){
+			if(startTime > now){
+				slotsMarkup += '<option value="'+available_slots[x].start_time+'-'+available_slots[x].end_time+'">'+tConvert(available_slots[x].start_time)+' - '+tConvert(available_slots[x].end_time)+'</option>';
+			}
+		}else{
 			slotsMarkup += '<option value="'+available_slots[x].start_time+'-'+available_slots[x].end_time+'">'+tConvert(available_slots[x].start_time)+' - '+tConvert(available_slots[x].end_time)+'</option>';
-		}		
+		}				
 	}
 	
 	$('.timepicker').html(slotsMarkup);
@@ -1836,7 +1845,7 @@ $(document).ready(function(){
 							}
 						}
 						
-						RAZOR_CONFIG.amount = (getPayableAmount() * 100); // in paisa;						
+						RAZOR_CONFIG.amount = (parseInt(getPayableAmount()) * 100); // in paisa;						
 						var rzp1 = new Razorpay(RAZOR_CONFIG);
 						rzp1.open();
 						
