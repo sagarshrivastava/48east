@@ -929,12 +929,18 @@ function renderSlots(d){
 	
 	var slotsMarkup = '';
 	var now  =  new Date().getTime();
+	var todayDayName = new Date().getUTCDay();
 	
 	for(var x in available_slots){
+		
 		var startTime = todayInMilli(available_slots[x].start_time.split(':'));
-		if(startTime > now){
+		if(d == todayDayName){
+			if(startTime > now){
+				slotsMarkup += '<option value="'+available_slots[x].start_time+'-'+available_slots[x].end_time+'">'+tConvert(available_slots[x].start_time)+' - '+tConvert(available_slots[x].end_time)+'</option>';
+			}
+		}else{
 			slotsMarkup += '<option value="'+available_slots[x].start_time+'-'+available_slots[x].end_time+'">'+tConvert(available_slots[x].start_time)+' - '+tConvert(available_slots[x].end_time)+'</option>';
-		}		
+		}				
 	}
 	
 	$('.timepicker').html(slotsMarkup);
